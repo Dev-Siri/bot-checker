@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "PlayFair";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/PlayFair.ttf");
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span * {
+  font-family: "PlayFair", sans-serif !important;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
